@@ -1,32 +1,27 @@
 {
-  "name": "vue-demo",
+  "name": "zhuangxiaomi-mobile",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "lint": "vue-cli-service lint"
+    "serve": "npx ../node_modules/.bin/vue-cli-service serve ./src/main.js",
+    "build": "npx ../node_modules/.bin/vue-cli-service build --dest ../dist/zhuangxiaomi-mobile ./src/main.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "core-js": "^2.6.5",
-    "jsonp": "^0.2.1",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3",
+    "mint-ui": "^2.2.13",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
+    "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "mint-ui": "^2.2.13",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,
@@ -49,6 +44,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "not ie <= 8"
   ]
 }

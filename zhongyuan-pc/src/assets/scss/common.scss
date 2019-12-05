@@ -1,0 +1,20 @@
+@import "./mixin.scss";
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    height: 27px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 27px;
+    @include bgImg("../img/index/flower.png", 9px, 9px);
+    padding-left: 24px;
+    padding-right: 14px;
+    border-radius: 2px;
+  }
+
+
+.black {
+    background-color: rgba(48, 51, 56, 1);
+    color: white;
+  }

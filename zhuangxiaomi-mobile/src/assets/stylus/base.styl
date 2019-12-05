@@ -1,0 +1,46 @@
+@import './mixin.styl'
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: fixed
+    z-index: 5
+    width: 100%
+    height: pr(40)
+    background: rgba(0, 0, 0, 0.7)
+    padding: pr(6) pr(8)
+    color: white
+    font-size: pr(17)
+    line-height: pr(28)
+
+.jian
+    // align-self: baseline
+    display: inline-block
+    width: pr(13)
+    height: pr(13)
+    margin-right: pr(6)
+    bg('../img/home/jian.png')
+
+.btn
+    width: pr(112)
+    height: pr(40)
+    margin: 7px 0
+    background: #FFA751
+    font-size: 17px
+    font-family: HiraginoSansGB-W3
+    font-weight: normal
+    color: rgba(255, 255, 255, 1)
+    line-height: pr(39)
+    text-align: center
+    border-radius: pr(3)
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)
+    .border-1px
+        &:before, &:after
+            transform: scaleY(0.7)
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2)
+    .border-1px
+        &:before, &:after
+            transform: scaleY(0.5)

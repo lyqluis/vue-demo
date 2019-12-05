@@ -1,0 +1,22 @@
+@mixin bg($url){
+    background: url($url) no-repeat center;
+}
+
+@mixin bgImg($url,$x,$y){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: $x, $y;
+}
+
+@mixin title(){
+    display: flex;
+    justify-content: space-between;
+    height: 27px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 27px;
+    @include bgImg("../assets/img/index/flower.png", 9px, 9px);
+    padding-left: 24px;
+    padding-right: 14px;
+    border-radius: 2px;
+}
