@@ -7,7 +7,7 @@
     "build": "npx ../node_modules/.bin/vue-cli-service build --dest ../dist/search-demo ./src/main.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "jsonp": "^0.2.1",
     "vue": "^2.5.17"
   },
